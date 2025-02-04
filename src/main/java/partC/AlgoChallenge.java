@@ -16,11 +16,6 @@ public class AlgoChallenge {
     multipleOf(8) --> false
      */
 
-    public static Boolean multipleOf(int number){
-
-        return null;
-    }
-
 
     /* Problem 17
        You are given two random temperatures from different states.
@@ -35,9 +30,19 @@ public class AlgoChallenge {
        checkTemp(2, 120) --> false
      */
 
-    public static Boolean checkTemp(int temp1, int temp2) {
-
-        return null;
+    public static Boolean multipleOf(int number){
+        if (number % 3 == 0 || number % 5 == 0) {return true;}
+        return false;
     }
 
+    public static Boolean checkTemp(int temp1, int temp2) {
+        if (temp1 < 0 && temp2 > 100) {return true;}
+        if (temp2 < 0 && temp1 > 100) {return true;}
+        return true;
+    }
+
+    public static void main(String[] args){
+        System.out.println(multipleOf(8));
+        System.out.println(checkTemp(2, 120));
+    }
 }

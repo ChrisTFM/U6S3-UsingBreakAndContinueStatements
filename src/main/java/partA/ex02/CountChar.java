@@ -2,17 +2,21 @@ package partA.ex02;
 
 public class CountChar {
     public static String countChar() {
-        String str = "www.oracle.com";
+        String str = "asdaw";
 
         int max = str.length();
-        int count = 0;
+        int count = -1;
 
-//            if (str.charAt(i) != 'w')
-//                continue;
+        for (var i = 0; i < max; i++) {
+            if (str.charAt(i) == 'w' || str.charAt(i) == 'W') {
+                count = i;
+                break;
+            }
+        }
 
-        count++;
 
-       str += ("Counting w : " + count );
+       str += (" (Counting w : " + count + ")");
+        if (count == -1) {str = "No W";}
         return str;
     }
 

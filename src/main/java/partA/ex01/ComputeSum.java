@@ -20,15 +20,13 @@ public class ComputeSum {
         }
 
         int total = 0;
+
         for (var i = 0; i < num.size(); i++) {
             System.out.println(num.get(i));
             total += num.get(i);
         }
 
         response = "Sum = " + String.valueOf(total);
-
-
-
 
         return response;
     }

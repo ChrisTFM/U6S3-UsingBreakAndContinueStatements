@@ -8,15 +8,12 @@ public class BreakContinue {
         for( int i = 0 ; i < 10 ; i++ ) {
 
             if( i % 2 == 0) {
-
+                continue;
             }
-
-            response += ("The number is " + i );
-
+            response += ("The number is " + i + "\n");
             if( i == 7 ) {
-
+                break;
             }
-
         }
 
         return response;
